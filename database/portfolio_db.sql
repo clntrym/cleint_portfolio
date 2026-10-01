@@ -1,8 +1,8 @@
 -- Database: portfolio_db
 -- Generated for Minimalist Monochrome Full-Stack Portfolio
 
-CREATE DATABASE IF NOT EXISTS `portfolio_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `portfolio_db`;
+-- CREATE DATABASE IF NOT EXISTS `portfolio_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- USE `portfolio_db`;
 
 -- 1. Admins Table
 CREATE TABLE IF NOT EXISTS `admins` (
