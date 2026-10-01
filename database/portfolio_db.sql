@@ -136,10 +136,10 @@ CREATE TABLE IF NOT EXISTS `settings` (
 -- Seed Data
 -- -------------------------------------------------------------
 
--- Admin (Username: admin, Email: admin@portfolio.com, Password: admin123)
+-- Admin (Username: cleint, Email: salarda.cleintraymund@ncst.edu.ph, Password: admin123)
 INSERT INTO `admins` (`id`, `username`, `email`, `password_hash`) VALUES
-(1, 'admin', 'admin@portfolio.com', '$2y$10$zt9H.Ip8HpQ5V2421e.ifetKH0JSMbeHNUvHkfwLhNJp4N1n0.XHG')
-ON DUPLICATE KEY UPDATE `email` = VALUES(`email`);
+(1, 'cleint', 'salarda.cleintraymund@ncst.edu.ph', '$2y$10$zt9H.Ip8HpQ5V2421e.ifetKH0JSMbeHNUvHkfwLhNJp4N1n0.XHG')
+ON DUPLICATE KEY UPDATE `username` = VALUES(`username`), `email` = VALUES(`email`);
 
 -- Profile
 INSERT INTO `profiles` (`id`, `name`, `title`, `short_bio`, `biography`, `career_goals`, `email`, `phone`, `location`, `profile_image`, `resume_url`, `availability`, `website_title`, `website_description`) VALUES

@@ -87,7 +87,7 @@ window.AdminLoginPage = {
               <input
                 type="text"
                 v-model="form.username"
-                placeholder="admin or admin@portfolio.com"
+                placeholder="cleint or salarda.cleintraymund@ncst.edu.ph"
                 required
                 autocomplete="username"
                 class="w-full px-4 py-3 text-sm bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all pl-10"
@@ -139,8 +139,8 @@ window.AdminLoginPage = {
         <!-- Default Credentials Hint -->
         <div class="mt-8 pt-6 border-t border-zinc-100 dark:border-zinc-800 text-center">
           <p class="text-xs text-zinc-400 font-mono">
-            Default Credentials: <br />
-            <span class="text-zinc-700 dark:text-zinc-300 font-semibold">Username:</span> admin &nbsp;|&nbsp; 
+            Credentials: <br />
+            <span class="text-zinc-700 dark:text-zinc-300 font-semibold">Username:</span> cleint &nbsp;|&nbsp; 
             <span class="text-zinc-700 dark:text-zinc-300 font-semibold">Password:</span> admin123
           </p>
         </div>
