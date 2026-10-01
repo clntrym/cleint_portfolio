@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Cleint</title>
+    <meta name="description" content="Production-ready full-stack developer portfolio with an admin dashboard and database.">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind standalone engine -->
+    <script src="Vue.js/vue-app/js/tailwindcss.js"></script>
+    <script src="js/tailwind.config.js"></script>
+
+    <style type="text/tailwindcss">
+        .btn {
+            @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-2.5 text-[14px] font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-60;
+        }
+        .btn-sm { @apply px-3 py-1.5 text-[13px]; }
+        .btn-primary { @apply bg-black text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200; }
+        .btn-secondary { @apply border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800; }
+        .btn-danger { @apply bg-red-600 text-white hover:bg-red-700; }
+        .btn-ghost { @apply text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800; }
+        .card { @apply rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm; }
+    </style>
+</head>
+<body class="bg-white dark:bg-zinc-950 font-sans text-zinc-900 dark:text-zinc-100 antialiased selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-black">
+    <div id="app"></div>
+
+    <!-- Libraries -->
+    <script src="Vue.js/vue-app/js/Vue.js"></script>
+    <script src="Vue.js/vue-app/js/VueRouter.js"></script>
+    <script src="Vue.js/vue-app/resources/lucide.min.js"></script>
+    <script src="Vue.js/vue-app/resources/sweetalert2@11.js"></script>
+
+    <!-- State / Client / Helpers -->
+    <script src="js/lib/api.js"></script>
+    <script src="js/lib/alerts.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/labels.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/model.js"></script>
+
+    <!-- Reusable Components -->
+    <script src="js/components/app-icon.js"></script>
+    <script src="js/components/status-badge.js"></script>
+    <script src="js/components/form-field.js"></script>
+    <script src="js/components/app-modal.js"></script>
+    <script src="js/components/confirm-modal.js"></script>
+    <script src="js/components/app-navbar.js"></script>
+    <script src="js/components/app-footer.js"></script>
+    <script src="js/components/app-sidebar.js"></script>
+    <script src="js/components/app-topbar.js"></script>
+
+    <!-- Public Portfolio Views -->
+    <script src="js/views/public/home-page.js"></script>
+    <script src="js/views/public/project-detail-page.js"></script>
+
+    <!-- Admin Dashboard Views -->
+    <script src="js/views/admin/login-page.js"></script>
+    <script src="js/views/admin/dashboard-page.js"></script>
+    <script src="js/views/admin/profile-page.js"></script>
+    <script src="js/views/admin/projects-page.js"></script>
+    <script src="js/views/admin/skills-page.js"></script>
+    <script src="js/views/admin/experience-page.js"></script>
+    <script src="js/views/admin/education-page.js"></script>
+    <script src="js/views/admin/resume-page.js"></script>
+    <script src="js/views/admin/messages-page.js"></script>
+    <script src="js/views/admin/social-links-page.js"></script>
+    <script src="js/views/admin/settings-page.js"></script>
+    <script src="js/views/not-found.js"></script>
+
+    <!-- Router & Application Controller Initialization -->
+    <script src="js/router.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+</html>

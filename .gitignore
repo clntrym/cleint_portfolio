@@ -1,0 +1,14 @@
+# OS generated files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+.DS_Store
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Node modules (if any in Vue app)
+node_modules/
+dist/
