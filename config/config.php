@@ -2,10 +2,22 @@
 // Database connection (PDO). This folder is blocked from the web by config/.htaccess.
 // XAMPP default: root with no password.
 
-const DB_HOST = 'localhost';
-const DB_NAME = 'portfolio_db';
-const DB_USER = 'root';
-const DB_PASS = '';
+// Auto-detect Localhost vs InfinityFree Live Server
+$httpHost = $_SERVER['HTTP_HOST'] ?? '';
+$isLocal = (strpos($httpHost, 'localhost') !== false || strpos($httpHost, '127.0.0.1') !== false);
+
+if ($isLocal) {
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'portfolio_db');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+} else {
+    // InfinityFree MySQL Credentials
+    define('DB_HOST', 'sql109.infinityfree.com');
+    define('DB_NAME', 'if0_43062399_portfolio_db');
+    define('DB_USER', 'if0_43062399');
+    define('DB_PASS', 'Hawarli0203');
+}
 
 // Session rules (seconds)
 const SESSION_IDLE_TIMEOUT = 60 * 60;      // 1 hour
